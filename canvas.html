@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Cai</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
+    
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                <li><a href="uiux.html" data-replace="UI/UX"><span>UI/UX Design</span></a></li>
+                <li><a href="webdesign.html" data-replace="Web Design"><span>Web Experiences</span></a></li>
+                <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" data-replace="Contact"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-container">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <i id="x" class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+
+    <main class="casestudy">
+        <img src="images/canvas.jpg" alt="display of canvas mobile app redesign">
+        <div class="casestudy-container">
+            <nav>
+                <ul> 
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#ideation">Ideation</a></li>
+                    <li><a href="#midfi">Mid-fi & Testing</a></li>
+                    <li><a href="#final">Final Design</a></li>
+                    <li><a href="#next">Next Steps</a></li>
+                    <li><a href="#prototype">View Prototype</a></li>
+                </ul>
+            </nav>
+            <div class="casestudy-writings">
+                <h1>Canvas - A UX Case Study</h1>
+
+                <div class="projectinfo">
+                    <ul>
+                        <li><h4>Timeline</h4></li>
+                        <li>Feb-Mar 2023</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>Software</h4></li>
+                        <li>Figma</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>My Role</h4></li>
+                        <li>Designer</li>
+                    </ul>
+                    <ul>
+                        <li><h4>Award</h4></li>
+                        <li>Best Visual Design</li>
+                    </ul>
+                </div>
+
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Canvas is a core academic platform used daily by college students to manage coursework, deadlines, and schedules. However, despite its importance, many students find certain features—particularly the To-Do list and Calendar—difficult to use and poorly organized.</p>
+
+                    <p>With two other designers in a three-week UI/UX design sprint for Design Interactive at UC Davis, I explored how the Canvas mobile app could better support students’ task and time management needs through clearer organization and more intuitive interactions.</p>
+
+                    <p>The Challenge: How might we improve the organization and usability of Canvas’s To-Do list and Calendar to better support students’ academic planning?</p>
+                </section>
+
+                <section id="research">
+                    <h2>Research</h2>
+                    <h3>Research Methods</h3>
+                    <p>To better understand how students currently use Canvas, we conducted a user survey focused on students’ experiences, feature usage, and pain points. Survey questions asked participants which Canvas features they use most frequently, which features they avoid, and what improvements would make Canvas more convenient and practical for everyday use.</p>
+
+                    <ul class="casestudy-ul"><span>We also conducted a competitive analysis of Notion and Google Calendar to identify best practices in task and time management. Our analysis focused on:</span>
+                        <li>Task organization: How tasks are grouped, categorized, and prioritized</li>
+                        <li>Calendar usability: Options for multiple calendar views, event categorization, and customization</li>
+                        <li>Interaction clarity: Feedback mechanisms, navigation cues, and discoverability of key functions</li>
+                    </ul>
+
+                    <h3>Key Research Data and Findings</h3>
+                    <p>Survey results revealed several consistent patterns. While most participants relied heavily on Canvas’s Calendar feature, far fewer regularly used the To-Do list. Across both features, a dominant concern was a lack of organization, making it difficult for students to quickly understand priorities, deadlines, and task completion status.</p>
+
+                    <p>Because the To-Do list is intended to support task completion and the Calendar is one of the most frequently used tools on Canvas, these insights highlighted clear opportunities for redesign. Improving the organization and clarity of these two features became the primary focus of our project.</p>
+
+                    <ul class="casestudy-ul"><span>Competitive Analysis Insights:</span>
+                        <li>Notion: Offers flexible task organization, including collapsible lists, sub-tasks, and category-based grouping. Users can track completion status visually, prioritize tasks, and easily switch between task views and calendar views.</li>
+                        <li>Google Calendar: Provides multiple calendar views, color-coded events, and seamless integration of personal, academic, and extracurricular schedules. Users can toggle categories on/off, giving better control over how events are displayed.</li>
+                    </ul>
+
+                    <p>This comparison highlighted opportunities for Canvas: users expect collapsible, organized task lists, clear visual cues for task completion, and customizable calendar views, which are features that Canvas currently lacks.</p>
+
+                </section>
+
+                <section id="ideation">
+                    <h2>Ideation</h2>
+                    <p>Based on survey results and competitive analysis, we identified key pain points including disorganized tasks, lack of visual feedback, and limited calendar flexibility, and generated solutions for each.</p>
+                    <h3>Sketches</h3>
+                    <img src="images/canvas_sketches.png" alt="sketches">
+
+                    <ul class="casestudy-ul"><span>Low-fidelity sketches explored these solutions, including:</span>
+                        <li>Task categorization by course and due date inspired by Notion’s collapsible lists and sub-tasks</li>
+                        <li>Checklist functionality and visual completion states reflecting best practices in task management apps</li>
+                        <li>Multi-calendar views supporting academic, personal, and extracurricular events, modeled after Google Calendar’s customizable views</li>
+                    </ul>
+
+                </section>
+
+                <section id="midfi">
+                    <h2>Mid-fi & Testing</h2>
+                    <p>Our design goals focused on improving organization, clarity, and visual feedback while maintaining familiarity with Canvas’s existing structure. Guided by survey insights and competitive analysis of Notion and Google Calendar, we developed solutions for the To-Do list and Calendar that directly addressed user pain points.</p>
+                    <img src="images/canvas_midfi.png" alt="mid-fi prototype">
+                    <ul class="casestudy-ul"><span>To-Do List Redesign:</span>
+                        <li>Default category calendars (exams, office hours, holidays) alongside customizable calendars for extracurricular events, reflecting Google Calendar’s flexibility</li>
+                        <li>“Full calendar” view for a comprehensive schedule overview</li>
+                    </ul>
+
+                    <ul class="casestudy-ul"><span>Calendar Redesign:</span>
+                        <li>Multiple calendar views (daily, weekly, monthly) to accommodate different planning styles</li>
+                        <li>Color-coded events based on categories (academic, personal, extracurricular) for quick visual differentiation</li>
+                        <li>Toggle options to show/hide specific event categories, enhancing customization and reducing clutter</li>
+                    </ul>
+
+                    <ul class="casestudy-ul"><span>Interaction & Visual Design Enhancements:</span>
+                        <li>Tab icons now remain visible and highlight when selected, providing clearer navigation feedback</li>
+                        <li>Arrow icons added to To-Do tasks for easy access to assignment details</li>
+                        <li>Consistent design system: sharper corners for interface elements, rounded edges for dropdowns, and unified styling across screens</li>
+                    </ul>
+
+                    <img src="images/canvas_testing.png" alt="user testing">
+                    <h3>Key Findings & Iterations</h3>
+                    <p>Usability testing surfaced several interaction clarity issues that guided targeted refinements.</p>
+                    <p>One common issue was confusion around a line icon intended to be dragged upward to reveal all events for a given day. Many users did not understand its function, so we replaced it with a clearer arrow button, better signaling its purpose.</p>
+                    <p>Another issue emerged in the To-Do list: users were unsure how to access full assignment details. While clicking the assignment title originally led to the assignment page, this interaction was not obvious. In response, we added a separate arrow icon next to each task to clearly indicate navigation to detailed assignment information.</p>
+                </section>
+
+                <section id="final">
+                    <h2>Final Designs</h2>
+                    <ul class="casestudy-ul"><span>The final design focused on improving organization while keeping interactions simple and familiar:</span>
+                        <li>A structured, course-based To-Do list with checklist functionality and visual completion states</li>
+                        <li>A multi-calendar system that supports both academic and extracurricular scheduling</li>
+                        <li>Clearer navigation cues and interaction feedback</li>
+                        <li>Consistent visual language across all redesigned screens</li>
+                    </ul>
+                </section>
+
+                <section id="next">
+                    <h2>Next Step</h2>
+                    <p>Given the limited three-week timeframe, our redesign focused primarily on the To-Do list and Calendar. Future work could expand these improvements to Canvas’s web interface, ensuring consistency and usability across platforms. Additionally, we would explore redesigning other features, such as notifications, assignment submission pages, and dashboard elements, to further enhance task management and overall user experience. Long-term testing of the redesigned features could also provide insights into how students customize calendars and interact with tasks over time, informing further refinements.</p>
+                </section>
+
+                <section class="cta" id="prototype">
+                    <a href="https://www.figma.com/proto/ZVB2Hia86M37aMXUAdOdQJ/di-canvas-redesign?page-id=0%3A1&node-id=6-2&viewport=823%2C763%2C0.08&t=FyrRzncjkcAvfSG1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6%3A2&show-proto-sidebar=1">
+                        <span>View Prototype</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+                
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <h3>Let's Get in Touch!</h3>
+            <div id="footer-info">
+                <ul>
+                    <li><h4>Menu</h4></li>
+                    <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                    <li><a href="index.html" data-replace="Work"><span>Work</span></a></li>
+                    <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                </ul>
+                <ul>
+                    <li><h4>Contact</h4></li>
+                    <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+                    <li><a href="www.linkedin.com/in/zhuoen-joanne-cai">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>© 2025 Joanne Cai · Designed & Built by Joanne Cai</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

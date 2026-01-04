@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Cai</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
+    
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                <li><a href="uiux.html" data-replace="UI/UX"><span>UI/UX Design</span></a></li>
+                <li><a href="webdesign.html" data-replace="Web Design"><span>Web Experiences</span></a></li>
+                <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" data-replace="Contact"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-container">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <i id="x" class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+
+    <main class="casestudy">
+        <img src="images/foodtown.jpg" alt="display of foodtown">
+        <div class="casestudy-container">
+            <nav>
+                <ul> 
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#ideation">Ideation</a></li>
+                    <li><a href="#midfi">Mid-fi & Testing</a></li>
+                    <li><a href="#next">Next Steps</a></li>
+                    <li><a href="#prototype">View Prototype</a></li>
+                </ul>
+            </nav>
+            <div class="casestudy-writings">
+                <h1>FoodTown - A UX Case Study</h1>
+
+                <div class="projectinfo">
+                    <ul>
+                        <li><h4>Timeline</h4></li>
+                        <li>Nov-Dec 2023</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>Software</h4></li>
+                        <li>Figma</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>My Role</h4></li>
+                        <li>Designer</li>
+                    </ul>
+                </div>
+
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Food insecurity is a widespread problem around the world. In the UI/UX Design: Principles and Practices course at UC Davis, I explored this problem through a mobile app design project focused on improving access to food while minimizing waste.</p>
+                    <p>The goal of this project was to design a platform that enables people to share excess food or request food within their local communities, reducing waste while supporting individuals facing food insecurity.</p>
+                    <p>Using user research, ideation, iterative prototyping, and usability testing, I designed FoodTown, a mobile app that combines community-based food sharing with social interaction. Users can post available food, request food, and communicate through private messaging to coordinate exchanges.
+                    </p>
+                </section>
+
+                <section id="research">
+                    <h2>Research</h2>
+                    <h3>Research Methods</h3>
+                    <p>I used various research methods to better understand user experiences related to food insecurity and food waste within local communities. I began with a preliminary literature review to establish a foundational understanding of food insecurity, food waste, and community-based food-sharing systems, drawing from academic articles.</p>
+
+                    <p>This was followed by a survey to identify common behaviors and pain points around excess food and food access. To gain deeper insight into user motivations and concerns, I also conducted in-depth user interviews, which helped surface emotional and contextual factors such as trust, stigma, and safety.</p>
+
+                    <h3>Key Research Data and Findings</h3>
+                    <ul class="casestudy-ul"><span>Findings from the survey and interviews revealed several consistent themes:</span>
+                        <li>Many participants reported struggling with managing excess food, often due to over-purchasing or lack of planning.</li>
+                        <li>Giving food away was widely preferred over discarding it, provided the process was convenient and trustworthy.</li>
+                        <li>Participants experiencing food insecurity emphasized the importance of privacy and low-stigma interactions when requesting food.</li>
+                        <li>A lack of centralized, community-based platforms made food sharing feel fragmented and inefficient.</li>
+                    </ul>
+                    <p>These insights informed core design decisions, including the app’s social posting structure, private messaging feature, and distance-based browsing.</p>
+
+
+                    <h3>Demographic Composition</h3>
+                    <ul class="casestudy-ul"><span>Research participants primarily consisted of adults, representing a population that may experience food insecurity or manage excess food while dealing with limited time and resources. Insights from the research were synthesized into two user personas representing:</span>
+                        <li>Individuals experiencing food insecurity seeking accessible food options</li>
+                        <li>Individuals with excess food seeking convenient ways to redistribute it</li>
+                    </ul>
+                    <img src="images/foodtown_persona1.jpg" alt="persona 1">
+                    <img src="images/foodtown_persona2.jpg" alt="persona 2">
+                </section>
+
+                <section id="ideation">
+                    <h2>Ideation</h2>
+                    <h3>Sketches</h3>
+                    <img src="images/ft_sketch1.jpg" alt="sketches">
+                    <img src="images/ft_sketch2.jpg" alt="sketches">
+                    <img src="images/ft_sketch3.jpg" alt="sketches">
+
+                    <p>Based on research findings, users were interested in convenient, low-barrier ways to share or receive food within their communities. Ideation focused on community-based posting, flexible search, and private messaging to support accessibility, trust, and low-stigma interactions. These ideas guided early sketches and feature prioritization.</p>
+
+                </section>
+
+                <section id="midfi">
+                    <h2>Mid-fi & Testing</h2>
+                    <p>I conducted two rounds of usability testing with 6 participants using a mid-fidelity prototype.</p>
+                    <ul class="casestudy-ul"><span>Round 1 tasks included:</span>
+                        <li>Creating a community</li>
+                        <li>Searching for food</li>
+                        <li>Messaging another user</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Round 2 repeated these tasks and added:</span>
+                        <li>Creating a post</li>
+                    </ul>
+                    <h3>Key Findings & Iterations</h3>
+                    <ul class="casestudy-ul"><span>Accessibility issues: During the first round, nearly all participants struggled to tap buttons accurately, indicating that many touch targets were too small. Participants consistently suggested enlarging buttons to improve usability.</span>
+                        <li>Iteration: Clickable icon and button sizes were increased before the second round.</li>
+                        <li>Outcome: In the second round, participants experienced significantly fewer accessibility issues, with most able to complete tasks without misclicks.
+                        </li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Search behavior and filter confusion: In the first round, most participants bypassed the filter feature and went directly to the search bar. Several users found the filter confusing and were unsure whether it needed to be applied before searching. One participant suggested making filters optional rather than mandatory.</span>
+                        <li>Iteration: I made filters optional, limited them to preferred distance, and reframed the search categories as “Suggestions” to function as quick-search options</li>
+                        <li>Outcome: In the second round, participants experienced significantly less confusion during the search task. However, some users did not immediately recognize the “Suggestions” tabs as quick-search options, indicating an opportunity for clearer visual cues.</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Community creation discoverability: In the first round, participants struggled to locate the option to create a community. The prominent plus icon for creating posts drew attention away from the less visible “Add more…” label.</span>
+                        <li>Iteration: I changed the label from “Add more…” to “Create a Community” to clarify the action.</li>
+                        <li>Outcome: In the second round, participants completed the community creation task without confusion.</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Selection feedback and visual clarity: Participants in the first round were unsure whether they had successfully selected an icon when creating a community. The original feedback relied on a subtle color change that many users found difficult to notice.</span>
+                        <li>Iteration: After testing several options, I added a colored background behind the selected icon to provide clearer visual feedback while maintaining design consistency.</li>
+                        <li>Outcome: In the second round, participants clearly understood when an icon was selected.</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Participants responded positively to the consistent use of circular icons and suggested rounding the corners of rectangular elements, such as community tabs, to better align with the visual system. While users found the color palette calming and readable, several suggested increasing contrast. Participants also noted that the typography was clear and consistent, but recommended exploring stronger typographic hierarchy.</span>
+                    </ul>
+                </section>
+
+                <section id="next">
+                    <h2>Next Step</h2>
+                    <p>If I were to continue developing FoodTown, I would focus on refining visual clarity, interaction design, and user safety.</p>
+                    <p>From a visual design perspective, I would further explore typography by testing different typefaces, font sizes, and weight combinations to establish a clearer hierarchy and improve readability. I would also refine the color system to increase contrast while maintaining a calm, cohesive visual language.</p>
+                    <p>From an interaction standpoint, I would continue iterating on the search experience, particularly the filter feature. This could include reorganizing filters with clearer iconography or visual grouping to better distinguish search functions and reduce cognitive load.</p>
+                    <p>Beyond refinement, I would expand the product to support additional user tasks and edge cases. A key future consideration is user safety, especially when in-person food exchanges are involved. To address this, I would explore onboarding features such as identity verification, community guidelines, and trust signals to help reduce risk and increase user confidence.</p>
+                </section>
+
+                <section class="cta" id="prototype">
+                    <a href="https://www.figma.com/proto/DM0SJSsORORD87IR8hpVKP/displays---des112?page-id=0%3A1&node-id=37-6&viewport=337%2C456%2C0.1&t=WNn5x1d8HYNJSxgS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=241%3A2939&show-proto-sidebar=11">
+                        <span>View Prototype</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+                
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <h3>Let's Get in Touch!</h3>
+            <div id="footer-info">
+                <ul>
+                    <li><h4>Menu</h4></li>
+                    <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                    <li><a href="index.html" data-replace="Work"><span>Work</span></a></li>
+                    <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                </ul>
+                <ul>
+                    <li><h4>Contact</h4></li>
+                    <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+                    <li><a href="www.linkedin.com/in/zhuoen-joanne-cai">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>© 2025 Joanne Cai · Designed & Built by Joanne Cai</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

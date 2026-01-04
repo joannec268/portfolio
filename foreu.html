@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Cai</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
+    
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                <li><a href="uiux.html" data-replace="UI/UX"><span>UI/UX Design</span></a></li>
+                <li><a href="webdesign.html" data-replace="Web Design"><span>Web Experiences</span></a></li>
+                <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" data-replace="Contact"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-container">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <i id="x" class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+
+    <main class="casestudy">
+        <img src="images/foreu.jpg" alt="display of foreu">
+        <div class="casestudy-container">
+            <nav>
+                <ul> 
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#ideation">Ideation</a></li>
+                    <li><a href="#midfi">Mid-fi & Testing</a></li>
+                    <li><a href="#final">Final Design</a></li>
+                    <li><a href="#takeaways">Key Takeaways</a></li>
+                    <li><a href="#next">Next Steps</a></li>
+                    <li><a href="#prototype">View Prototype</a></li>
+                </ul>
+            </nav>
+            <div class="casestudy-writings">
+                <h1>ForeU - A UX Case Study</h1>
+
+                <div class="projectinfo">
+                    <ul>
+                        <li><h4>Timeline</h4></li>
+                        <li>Apr-May 2024</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>Software</h4></li>
+                        <li>Figma</li>
+                    </ul>
+
+                    <ul>
+                        <li><h4>My Role</h4></li>
+                        <li>Designer</li>
+                    </ul>
+                    <ul>
+                        <li><h4>Award</h4></li>
+                        <li>Best User Research</li>
+                    </ul>
+                </div>
+
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Menstruation tracking apps often overwhelm users with excessive features, dense information, and social content that detracts from their primary purpose. During a three-week UI/UX design sprint in UC Davis Design Interactive, I worked with two other designers to address this issue.</p>
+
+                    <p>ForeU is a minimalistic menstruation tracking app designed for college students who want a clear, visually soothing, and easy-to-use way to track and predict their menstrual cycle and symptoms.</p>
+
+                    <p>The Challenge: How might we design an app for college students that tracks their interests in a clear and concise way?</p>
+
+                    <p>Refined Design Question: How might we develop a menstruation tracking app that is minimalistic and visually appealing, while allowing users to easily track and predict their cycle and symptoms?</p>
+                </section>
+
+                <section id="research">
+                    <h2>Research</h2>
+                    <h3>Research Methods</h3>
+                    <ul class="casestudy-ul"><span>We used a mixed-methods research approach to understand how users currently interact with menstruation and habit-tracking apps. Our research included:</span>
+                        <li>Survey</li>
+                        <li>Competitive Analysis</li>
+                        <li>User Interviews with existing app users</li>
+                        <li>Affinity mapping to synthesize insights</li>
+                    </ul>
+
+                    <h3>Key Research Data and Findings</h3>
+                    <p>The survey revealed that participants most commonly tracked health-related habits such as menstruation cycles, exercise, and general wellness. When asked about improvements they wanted in a new app, users consistently emphasized fewer features, clearer visual elements, simpler interactions, and a clean, visually appealing design. Nearly half of respondents expressed a preference for apps that focus on tracking a single habit rather than serving as an all-in-one habit tracker, highlighting a desire for clarity and specificity.</p>
+
+                    <p>Our competitive analysis examined several existing apps, including Habit, Flo, and Clue, to identify usability issues and design gaps. The Habit app presented challenges due to its confusing layout and inconsistent iconography, such as multiple calendar views showing overlapping information and unclear gear icons that led to different destinations. Flo was frequently described as overwhelming because of excessive features, pop-up ads, and persistent upgrade prompts. Users reported that constant notifications increased anxiety and caused them to anticipate their period too often. While Clue was appreciated for its minimalistic aesthetic and core tracking functionality, users felt that navigation required too many steps for simple tasks and that added features over time reduced usability.</p>
+
+                    <p>User interviews reinforced these findings and provided deeper insight into emotional responses to health-tracking apps. Several participants explained that they chose menstruation-tracking apps primarily to manage irregular periods, valuing simplicity, ad-free experiences, and customizable reminders. Some users ultimately abandoned specialized apps in favor of basic tools like phone calendars or notes, which they found more efficient and less intrusive. Participants also shared that habit tracking, especially for health, can create pressure or feelings of failure when users forget to log information, suggesting that overly complex interfaces may reduce long-term engagement rather than support it. Additionally, concerns around data privacy and trust emerged, with users expressing discomfort about how personal health data might be used.</p>
+
+                    <img src="images/foreu_am.jpg" alt="affinity mapping">
+
+                    <ul class="casestudy-ul"><span>From research synthesis, three core needs emerged:</span>
+                        <li>Focus on essential tracking features</li>
+                        <li>Clean, calming visual design</li>
+                        <li>Clear predictions and reminders (countdowns, calendars).</li>
+                    </ul>
+
+
+                    <h3>Demographic Composition</h3>
+
+                    <p>Research insights were translated into a primary user persona representing college students who experience irregular cycles and want a simple, reliable tracking experience.</p>
+                    
+                    <img src="images/foreu_persona.png" alt="persona">
+                </section>
+
+                <section id="ideation">
+                    <h2>Ideation</h2>
+                    <h3>Sketches</h3>
+                    <img src="images/foreu_sketches.png" alt="sketches">
+
+                    <ul class="casestudy-ul"><span>During ideation, we focused on designing an experience that prioritized clarity over quantity. We brainstormed and sketched layouts that emphasized:</span>
+                        <li>Timeline-based tracking (countdowns, weekly views)</li>
+                        <li>Minimal text and clear visual hierarchy</li>
+                        <li>Reducing unnecessary social or secondary features</li>
+                    </ul>
+                    <p>Low-fidelity sketches explored page layouts and navigation structures that would support quick, low-effort interactions.</p>
+
+                </section>
+
+                <section id="midfi">
+                    <h2>Mid-fi & Testing</h2>
+                    <img src="images/foreu_midfi.png" alt="mid-fi prototype">
+                    <ul class="casestudy-ul"><span>We developed a mid-fidelity prototype that included the following key flows:</span>
+                        <li>Login</li>
+                        <li>Homepage with cycle day and countdown</li>
+                        <li>Personal tips page</li>
+                        <li>Calendar page</li>
+                        <li>Insights page</li>
+                        <li>Profile page</li>
+                    </ul>
+
+                    <h3>Key Findings & Iterations</h3>
+                    <p>Through usability testing, we uncovered multiple opportunities to enhance the overall user experience.</p>
+                    <ul class="casestudy-ul"><span>Login:</span>
+                        <li>Layout and wording felt inconsistent</li>
+                        <li>Iteration: Removed redundant text and improved alignment</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Personal Tips Page:</span>
+                        <li>Users felt overwhelmed by dense text</li>
+                        <li>Iteration: Reduced text, improved typographic hierarchy, and added visuals</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Personal Insights Page:</span>
+                        <li>Graphs were difficult to interpret</li>
+                        <li>Iteration: Clarified month labels and improved data readability</li>
+                    </ul>
+                    <ul class="casestudy-ul"><span>Profile Page:</span>
+                        <li>Users found historical records redundant</li>
+                        <li>Iteration: Removed unnecessary icons and improved typographic alignment</li>
+                    </ul>
+                </section>
+
+                <section id="final">
+                    <h2>Final Designs</h2>
+                    <p>The final design emphasizes clarity, consistency, and emotional ease.</p>
+                    <ul class="casestudy-ul"><span>Key Features</span>
+                        <li>Login page: multiple ways to login via social media; if not, it is possible to sign up through email and password</li>
+                        <li>Homepage with weekly calendar, countdown, and quick logging</li>
+                        <li>Categorized tips for sleep, pain, and symptoms</li>
+                        <li>Calendar and insights for historical cycle data</li>
+                        <li>Reminder system with encouraging messages</li>
+                        <li>Streamlined profile page with unnecessary features removed</li>
+                    </ul>
+                </section>
+
+                 <section id="takeaways">
+                    <h2>Key Takeaways</h2>
+                    <ul class="casestudy-ul"><span>Through this project, I learned several valuable lessons about user-centered design:</span>
+                        <li>Minimalism improves usability by reducing cognitive load</li>
+                        <li>Consistency in layout and visual language builds user trust</li>
+                        <li>User feedback is essential, even in short design sprints</li>
+                        <li>Designing for sensitive topics requires empathy and restraint</li>
+                </section>
+
+                <section id="next">
+                    <h2>Next Step</h2>
+                    <p>If the project were continued, we would focus on enhancing engagement and long-term usability. One area of exploration would be animating the cycle countdown to create a more dynamic and engaging tracking experience. We would also introduce a friendly app mascot to foster a stronger emotional connection and make interactions feel more approachable. In addition, further usability testing would be conducted to evaluate long-term engagement patterns and refine notification preferences, ensuring reminders feel supportive rather than overwhelming.</p>
+                </section>
+
+                <section class="cta" id="prototype">
+                    <a href="https://www.figma.com/proto/Wl7xMTZfuEHhZuT8EJqHgX/DI-SQ24-ForeU?page-id=0%3A1&node-id=314-2207&viewport=485%2C544%2C0.13&t=Ts6t77EMLygxMqSm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=314%3A220">
+                        <span>View Prototype</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+                
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <h3>Let's Get in Touch!</h3>
+            <div id="footer-info">
+                <ul>
+                    <li><h4>Menu</h4></li>
+                    <li><a href="about.html" data-replace="About"><span>About</span></a></li>
+                    <li><a href="index.html" data-replace="Work"><span>Work</span></a></li>
+                    <li><a href="explorations.html" data-replace="Explorations"><span>Explorations</span></a></li>
+                </ul>
+                <ul>
+                    <li><h4>Contact</h4></li>
+                    <li><a href="mailto:&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#122;&#104;&#117;&#111;&#101;&#110;&#106;&#111;&#097;&#110;&#110;&#101;&#099;&#097;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+                    <li><a href="www.linkedin.com/in/zhuoen-joanne-cai">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>© 2025 Joanne Cai · Designed & Built by Joanne Cai</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
