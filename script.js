@@ -1,13 +1,16 @@
 (function() {
     'use strict';
 
-    // const hamburger = document.getElementById("hamburger-menu");
-    // const navLinks = document.getElementById("nav-links");
-
-    // hamburger.addEventListener("click", () => {
-    //     navLinks.classList.toggle("show");
-    // });
-
+    document.addEventListener("DOMContentLoaded", function() {
+        gsap.from("#hero-tagline .line", {
+            opacity: 0,
+            y: 20,
+            duration: 1.6,
+            stagger: 0.8, // delay between lines
+            ease: "power2.out"
+        });
+    });
+    
 
     const hamburger = document.getElementById("hamburger");
     const x = document.getElementById("x");
@@ -48,5 +51,6 @@
         });
     });
 
+    
 
 })();
